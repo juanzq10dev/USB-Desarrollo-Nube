@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "443127637273",
+    "project_id": "desarrollo-en-la-nube-27959",
+    "storage_bucket": "desarrollo-en-la-nube-27959.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443127637273:android:c1c22630389cc8ff639188",
+        "android_client_info": {
+          "package_name": "com.company.name"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443127637273-rcf1vcbtmi698u75voiss19rdueir3r9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnMBQoG6Evntjmju8c2rFjunAErHZoNkk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443127637273-rcf1vcbtmi698u75voiss19rdueir3r9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443127637273:android:1931eda92fcc225e639188",
+        "android_client_info": {
+          "package_name": "com.example.firebasenotifications"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443127637273-5f9huro4phvhm0ggnir62543qaroomgg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebasenotifications",
+            "certificate_hash": "c69c13402b0f6140eda6167767af77594ee418f7"
+          }
+        },
+        {
+          "client_id": "443127637273-rcf1vcbtmi698u75voiss19rdueir3r9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnMBQoG6Evntjmju8c2rFjunAErHZoNkk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443127637273-rcf1vcbtmi698u75voiss19rdueir3r9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

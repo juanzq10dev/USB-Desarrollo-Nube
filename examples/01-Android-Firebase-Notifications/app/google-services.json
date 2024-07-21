@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "443127637273",
+    "project_id": "desarrollo-en-la-nube-27959",
+    "storage_bucket": "desarrollo-en-la-nube-27959.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443127637273:android:1931eda92fcc225e639188",
+        "android_client_info": {
+          "package_name": "com.example.firebasenotifications"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnMBQoG6Evntjmju8c2rFjunAErHZoNkk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
