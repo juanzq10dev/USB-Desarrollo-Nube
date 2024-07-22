@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { firebaseAuth } from "./firebase";
 import { useState } from "react";
@@ -6,6 +6,7 @@ import { useState } from "react";
 const Register = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [userName, setUsername] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const submitRegisterForm = (e) => {
         e.preventDefault();
@@ -13,7 +14,11 @@ const Register = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
-                console.log(user);
+                updateProfile(user, {
+                    displayName: userName
+                }).then(() => {
+                    console.log("Welcome:" + user.displayName);
+                })
             }).catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
@@ -29,6 +34,10 @@ const Register = () => {
                         <Form.Group>
                             <Form.Label>Email</Form.Label>
                             <Form.Control value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Enter email" />
+                        </Form.Group>
+                        <Form.Group>
+                            <Form.Label>Username</Form.Label>
+                            <Form.Control value={userName} onChange={(e) => setUsername(e.target.value)} type="text" placeholder="Enter username" />
                         </Form.Group>
                         <Form.Group>
                             <Form.Label>Password</Form.Label>

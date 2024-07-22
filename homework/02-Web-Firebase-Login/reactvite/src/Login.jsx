@@ -6,12 +6,14 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [username, setUsername] = useState('')
     const doSignIn = (e) => {
         e.preventDefault();
         const auth = firebaseAuth;
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
+                setUsername(user.displayName);
                 console.log(user);
             }).catch((error) => {
                 const errorCode = error.code;
@@ -33,6 +35,7 @@ const Login = () => {
                     </Form>
                 </Col>
             </Row>
+            <h2>Bienvenido: {username}</h2>
         </Container>
     );
 }
