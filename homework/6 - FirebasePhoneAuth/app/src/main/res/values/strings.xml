@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PracticaNotificaciones</string>
+    <string name="default_notification_channel_id">default_channel</string>
+    <string name="welcome_user">Welcome %1$s</string>
+    <string-array name="phone_countries">
+        <item>Bolivia</item>
+        <item>Estados Unidos</item>
+    </string-array>
+    <string-array name="phone_codes">
+        <item>+591</item>
+        <item>+1</item>
+    </string-array>
+</resources>

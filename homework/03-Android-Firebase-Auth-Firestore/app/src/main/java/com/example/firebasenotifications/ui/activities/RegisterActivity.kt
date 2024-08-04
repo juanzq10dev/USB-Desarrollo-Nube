@@ -34,14 +34,16 @@ class RegisterActivity : AppCompatActivity() {
         val name = binding.userNameText.editText?.text.toString()
         val lastName = binding.lastNameText.editText?.text.toString()
         val age = binding.ageText.editText?.text.toString()
+        val email = binding.emailText.editText?.text.toString()
 
         val user = hashMapOf(
             "name" to name,
             "lastName" to lastName,
-            "age" to age
+            "age" to age,
+            "email" to email
         )
 
-        db.collection("User")
+        db.collection("users")
             .add(user)
             .addOnSuccessListener { documentReference ->
                 Log.d("TAG", "DocumentSnapshot added with ID: ${documentReference.id}")
