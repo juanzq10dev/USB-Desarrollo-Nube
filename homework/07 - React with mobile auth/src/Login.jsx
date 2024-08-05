@@ -20,8 +20,6 @@ const Login = () => {
         <Container>
             <Row>
                 <Col>
-
-
                     <Form onSubmit={doSignIn}>
                         <h1>Login</h1>
                         <FormLabel>Email</FormLabel>
@@ -29,6 +27,7 @@ const Login = () => {
                         <FormLabel>Password</FormLabel>
                         <FormControl onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Enter password" />
                         <Button className="mt-2" variant="primary" type="submit">Sign in</Button>
+                        <Button variant="link" onClick={() => navigate('/phonelogin')}>Phone Login</Button> 
                     </Form>
                 </Col>
             </Row>
